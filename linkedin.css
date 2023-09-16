@@ -1,0 +1,353 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#e7dddd;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+   
+}
+.fullpage{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 250px 500px 300px;;
+    grid-gap: 25px;
+    margin-top: 25px;
+    justify-content: center;
+}
+.top-section{
+    background-color:white;
+    width: 100vw;
+    height: 60px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+   
+
+}
+
+
+#profile{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border-right: 2px solid black;
+
+}
+
+.top-section img{
+    height: 20px;
+
+}
+#logo{
+    margin-left: 20vw;
+    width: 50px;
+    height: 50px;
+}
+.search-box{
+    width: 15vw;
+    height: 20px;
+    background-color: hsla(180, 80%, 98%,0.5);
+    border: 2px solid black;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px;
+}
+#search{
+    width: 10px;
+    height: 10px;
+    margin-left: auto;
+
+}
+input{
+    visibility: hidden;
+}
+
+.menu-nav{
+    width: 35%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5vw;
+}
+.nav-option,.nav-option :nth-child(7){
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.nav-option span{
+    display: flex;
+    flex-direction: row;
+}
+.nav-option:nth-child(7){
+    border-left: 2px solid grey ;
+}
+.left-section{
+    height: 580px;
+    display: grid;
+    grid-gap: 6px;
+    grid-template-rows: 55% 45%;
+    position: relative;
+    
+}
+.profile{
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 15%;
+    position: relative;
+
+}
+
+.profilebox{
+    width: 100%;
+    height: 170px;
+    margin-top: 0;
+    position: absolute;
+    text-align: center;
+
+}
+.profile-frame {
+   width: 100% ;
+   height: 70px;
+    background-color: #523e3e;
+    border-radius: 10px 10px 0 0;
+   
+}
+#profile-photo{
+    
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    border: 2px solid white ;
+    
+}
+.profile-section2{
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+}
+.name{
+    padding-top: 10px;
+    line-height: 20px;
+}
+.profile-section2 li{
+    
+    list-style-type: none;
+    padding-left: 20px;
+    line-height: 27px;
+}
+.profile-section2{
+    background-color: white;
+}
+.recent-section{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    border-radius: 10px;
+}
+.discover{
+    border-top: 10px soild black;
+    font-weight: bold;
+    padding-left: 20px;
+    
+}
+.blues{
+    color: rgb(53, 79, 211);
+}
+
+.non-bold{
+    font-weight:normal ;
+}
+.groups{
+    margin: 0% ;
+}
+.bold{
+    font-weight: bold;
+}
+.small{
+    font-size: small;
+}
+.not-small{
+    font-size: medium;
+}
+hr{
+    position: fixed;
+}
+.recent-section ul{
+    list-style: none;
+}
+.group-event{
+    padding-left: 20px;
+    font-weight: bold;
+}
+.goback{
+    padding-left: 20px;
+}
+
+
+
+
+
+.middle-section{
+   
+   display: grid;
+   grid-template-rows: 120px auto auto;
+   row-gap: 10px;
+   border: 5px solid black;
+   border: 10px;
+}
+
+
+.post1,.post2{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.profile-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: orange;
+    grid-area: profile-image;
+
+}
+.post-search{
+    grid-area:post-search;
+    background-color: #ffffff;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 0 0;
+
+}
+.media{
+    grid-area:media;
+    background-color: #ffffff;
+}
+.event{
+    grid-area: event;
+    background-color: #ffffff;
+}
+.write-a-article{
+    grid-area:write-a-article;
+    background-color: #ffffff ;
+}
+.start-a-post{
+    display: grid;
+    grid-template-columns: auto auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    background-color: #ffffff;
+    text-align: center;
+    grid-template-areas: 
+
+       "profile-image  profile-image  post-search  post-search  post-search  post-search  post-search  post-search  post-search "
+       "media  media  media  event  event  event  write-a-article  write-a-article  write-a-article";
+}
+.searchboxx{
+    width: 90%;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;   
+
+
+}
+.media, .event, .write-a-article{
+    text-align: center;
+    padding: 10px 10px;
+}
+
+#profile-image{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.mainpost img{
+    width: 500px;
+    height: 500px;
+}
+
+.bottom-partof-post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+    background-color: #ffffff;
+}
+.description-of-image{
+    padding: 10px;
+    line-height: 20px;
+    background-color: #ffffff;
+}
+#profile-image img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.right-section{
+    height: 761px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 300px 300px; 
+    
+}
+.linkedin-news{
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow-y: scroll;
+   
+}
+.footer{
+    line-height: 30px;
+    width: 80%;
+}
+.linkedin-news h2{
+    margin-left: 20px;
+}
+.sub-footer1,.sub-footer2,.sub-footer3,.sub-footer4,.sub-footer5,.sub-footer6{
+   font-size: small;
+   display: inline-block;
+   padding: 10px 10px;
+   
+
+
+}
+.footer{
+
+    margin-left: auto;
+    margin-right: auto;
+   
+   
+}
